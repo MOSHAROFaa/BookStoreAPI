@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookStore CRUD</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <h2>BookStore CRUD</h2>
+      <form id="subjectForm" action="http://localhost:8090/subjects/form" method="POST">
+       
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" class="form-control" id="title" name="title" required />
+          <div class="error" id="titleError"></div>
+        </div>
+        <div class="form-group">
+          <label for="author">Author:</label>
+          <input type="text" class="form-control" id="author" name="author" required />
+          <div class="error" id="authorError"></div>
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN:</label>
+          <input type="text" class="form-control" id="isbn" name="isbn" required />
+          <div class="error" id="isbnError"></div>
+        </div>
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <input type="number" class="form-control" id="price" name="price" required min="0" />
+          <div class="error" id="priceError"></div>
+        </div>
+        <div class="form-group">
+          <label for="year">Year:</label>
+          <input type="number" class="form-control" id="year" name="year" required min="0" />
+          <div class="error" id="yearError"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+      
+    </div>
+
+  </body>
+</html>

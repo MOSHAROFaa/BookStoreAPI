@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookStore CRUD</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <h2>Retrieve a specific book by its ID</h2>
+      <!-- <form id="subjectForm" onsubmit="submitForm(event)"> -->
+        <form id="subjectForm" action="http://localhost:8090/subjects/form" method="GET">
+          <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="text" class="form-control" id="id" name="id" required />
+            <div class="error" id="idError"></div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        
+
+    </div>
+
+  </body>
+</html>
